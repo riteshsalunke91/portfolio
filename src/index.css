@@ -1,0 +1,13 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root{--bg:243 245 251;--ink:10 15 30;--mute:85 92 120;--line:10 15 30;--accent:91 71 224;--ok:22 128 60}
+.dark{--bg:10 15 30;--ink:237 239 247;--mute:148 156 184;--line:255 255 255;--accent:139 124 255;--ok:74 222 128}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:rgb(var(--bg));color:rgb(var(--ink));font-family:'Instrument Sans',system-ui,sans-serif;transition:background .3s,color .3s}
+h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.025em}
+.panel{background:rgb(var(--line)/.04);border:1px solid rgb(var(--line)/.12)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;border-radius:.6rem;padding:.7rem 1.2rem;font-weight:600;transition:transform .2s,opacity .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:rgb(var(--accent));color:rgb(var(--bg))}
+.btn-ghost{border:1px solid rgb(var(--line)/.22)}
+:focus-visible{outline:2px solid rgb(var(--accent));outline-offset:3px;border-radius:.4rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
